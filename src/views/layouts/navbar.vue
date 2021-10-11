@@ -25,6 +25,9 @@
                         <li class="nav-item">
                             <router-link class="nav-link" to="/ListadoProyectos">Listado Proyectos</router-link>
                         </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link" to="/creacionusuarios">Usuarios</router-link>
+                        </li>
                     </ul>
                 </div>
             </div>
