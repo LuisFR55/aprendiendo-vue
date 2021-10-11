@@ -23,17 +23,32 @@
                             <router-link class="nav-link" to="/FrmProyectos">Formulario Proyectos</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link class="nav-link" to="/ListadoProyectos">Listado Proyectos</router-link>
+                            <router-link class="nav-link" to="/ListadoProyectos">Listado Proyectosssssss</router-link>
                         </li>
                         <li class="nav-item">
+
                             <router-link class="nav-link" to="/InputGroup">Input Group</router-link>
                         </li>
                         <li class="nav-item">
 
                             <router-link class="nav-link" to="/ListadoUsuarios">Listado Usuarios</router-link>
-                        </li>
 
+                            <router-link class="nav-link" to="/creacionusuarios">Usuarios</router-link>
+                        </li>
                     </ul>
+                    <ul>
+                        <li>
+                            <router-link class="nav-link" to="/ListadoUsuarios">Listado Usuarios</router-link>
+                        </li>
+                    </ul> 
+                    <div>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <router-link class="nav-link" to="/Login">Login</router-link>
+                        </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </nav>
