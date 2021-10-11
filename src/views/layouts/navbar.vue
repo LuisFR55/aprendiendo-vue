@@ -23,7 +23,10 @@
                             <router-link class="nav-link" to="/FrmProyectos">Formulario Proyectos</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link class="nav-link" to="/ListadoProyectos">Listado Proyectos</router-link>
+                            <router-link class="nav-link" to="/ListadoProyectos">Listado Proyectosssssss</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link" to="/ListadoUsuarios">Listado Usuarios</router-link>
                         </li>
                     </ul>
                 </div>
