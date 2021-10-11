@@ -6,6 +6,7 @@ import Home from './views/home'
 import FrmDatosPersonales from './views/FrmDatosPersonales'
 import FrmProyectos from './views/FrmProyectos'
 import ListadoProyectos from './views/ListadoProyectos'
+import Login from './views/Login'
 import ListadoUsuarios from './views/ListadoUsuarios'
 
 
@@ -37,6 +38,11 @@ const router = new createRouter({
             path : '/ListadoProyectos',
             name : 'ListadoProyectos',
             component : ListadoProyectos
+        },
+        {
+            path : '/Login',
+            name : 'Login',
+            component : Login
         },
         {
             path : '/ListadoUsuarios',
