@@ -28,6 +28,11 @@
                         <li class="nav-item">
                             <router-link class="nav-link" to="/InputGroup">Input Group</router-link>
                         </li>
+                        <li class="nav-item">
+
+                            <router-link class="nav-link" to="/ListadoUsuarios">Listado Usuarios</router-link>
+                        </li>
+
                     </ul>
                 </div>
             </div>

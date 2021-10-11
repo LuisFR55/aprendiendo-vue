@@ -7,6 +7,8 @@ import FrmDatosPersonales from './views/FrmDatosPersonales'
 import FrmProyectos from './views/FrmProyectos'
 import ListadoProyectos from './views/ListadoProyectos'
 import InputGroup from './views/inputgroup'
+import ListadoUsuarios from './views/ListadoUsuarios'
+
 
 //RUTAS
 const router = new createRouter({
@@ -41,7 +43,13 @@ const router = new createRouter({
             path : '/InputGroup',
             name : 'InputGroup',
             component : InputGroup
+        },
+        {
+            path : '/ListadoUsuarios',
+            name : 'ListadoUsuarios',
+            component : ListadoUsuarios
         }
+
     ]
 });
 
