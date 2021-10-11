@@ -8,14 +8,14 @@
         <div class="row">
             <div class="col-md-4">
                 <label>Nombre</label>
-                <input v-model="Nombre" type="text" :class="(Errores.Nombre) ? 'form-control is-invalid' : 'form-control'">
+                <input v-model="DatosPersonales.Nombre" type="text" :class="(Errores.Nombre) ? 'form-control is-invalid' : 'form-control'" :disabled="Enviar">
                 <div class="invalid-feedback" v-if="Errores.Nombre">
                     {{ Errores.Nombre.message }}
                 </div>
             </div>
             <div class="col-md-4">
                 <label>Apellidos</label>
-                <input v-model="Apellidos" type="text" :class="(Errores.Apellido) ? 'form-control is-invalid' : 'form-control'">
+                <input v-model="DatosPersonales.Apellidos" type="text" :class="(Errores.Apellido) ? 'form-control is-invalid' : 'form-control'">
                 <div class="invalid-feedback" v-if="Errores.Apellido">
                     {{ Errores.Apellido.message }}
                 </div>
@@ -52,38 +52,58 @@
                 <button v-on:click="ValidarForm()" class="btn btn-primary">Guardar</button>
             </div>
         </div>
+
+        <hr>
+
+        <Datos :DatosForm="DatosPersonales" v-if="Enviar" @Edicion="CambioEnvio"></Datos>
     </div>
 </template>
 
 <script>
+import Datos from '../components/Datos.vue'
+
 export default {
     name : 'FrmDatosPersonales',
+    components :{
+        Datos
+    },
     data() {
         return {
-            Nombre : "",
-            Apellidos : "",
-            Correo : "",
-            Telefono : "",
-            FechaNacimiento : "",
-            EstadoCivil : "",
-            Direccion : "",
-            Errores : {}
+            DatosPersonales: {
+                Nombre : "",
+                Apellidos : "",
+                Correo : "",
+                Telefono : "",
+                FechaNacimiento : "",
+                EstadoCivil : "",
+                Direccion : ""
+            },
+            Errores : {},
+            Enviar : false
         }
     },
     methods : {
+        CambioEnvio(Dato){
+            this.Enviar = Dato;
+        },
         ValidarForm(){
             this.Errores = {};
             
-            if(this.Nombre == ""){
+            if(this.DatosPersonales.Nombre == ""){
                 this.Errores['Nombre'] = { 
                     message : "El Nombre es obligatorio" 
                 }
             }
-            if(this.Apellidos == ""){
+            if(this.DatosPersonales.Apellidos == ""){
                 this.Errores['Apellido'] = { 
                     message : "El Apellido es obligatorio" 
                 }
             }
+            
+            if(JSON.stringify(this.Errores) == '{}'){
+                this.Enviar = true;
+            }
+
         }
     }
 }
