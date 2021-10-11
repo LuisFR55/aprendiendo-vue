@@ -6,6 +6,7 @@ import Home from './views/home'
 import FrmDatosPersonales from './views/FrmDatosPersonales'
 import FrmProyectos from './views/FrmProyectos'
 import ListadoProyectos from './views/ListadoProyectos'
+import Login from './views/Login'
 
 //RUTAS
 const router = new createRouter({
@@ -35,6 +36,11 @@ const router = new createRouter({
             path : '/ListadoProyectos',
             name : 'ListadoProyectos',
             component : ListadoProyectos
+        },
+        {
+            path : '/Login',
+            name : 'Login',
+            component : Login
         }
     ]
 });
