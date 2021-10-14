@@ -19,7 +19,7 @@
         <input v-model="Fecha" type="date" :class="(Errores.Fecha) ? 'form-control is-invalid' : 'form-control'" />
         <div class="invalid-feedback" v-if="Errores.Fecha">
                     {{ Errores.Fecha.message }}
-                </div>
+        </div>
       </div>
       <div class="row">
         <div class="col-md-6">

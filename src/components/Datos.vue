@@ -12,10 +12,10 @@
 <script>
 export default {
     name : 'Datos',
-    props : {
+    props : { //recibir informacion de padre a hijo
         DatosForm : Object
     },
-    methods : {
+    methods : { //comunicacion de hijo a padre
         Editar(){
             this.$emit('Edicion', false);
         }

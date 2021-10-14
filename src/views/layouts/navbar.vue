@@ -29,12 +29,25 @@
                             <router-link class="nav-link" to="/cardExamples">Cards</router-link>
                         </li>
                         <li>
+                            <router-link class="nav-link" to="/InputGroup">Input Group</router-link>
+                        </li>
+                        <li class="nav-item">
+
+                            <router-link class="nav-link" to="/ListadoUsuarios">Listado Usuarios</router-link>
+
+                            <router-link class="nav-link" to="/creacionusuarios">Usuarios</router-link>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
                             <router-link class="nav-link" to="/ListadoUsuarios">Listado Usuarios</router-link>
                         </li>
                         <li class="nav-item">
                             <router-link class="nav-link" to="/Login">Login</router-link>
                         </li>
                     </ul>
+                        
+
                 </div>
             </div>
         </nav>

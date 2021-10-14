@@ -7,6 +7,8 @@ import FrmDatosPersonales from './views/FrmDatosPersonales'
 import FrmProyectos from './views/FrmProyectos'
 import ListadoProyectos from './views/ListadoProyectos'
 import cardExamples from './views/cardExamples'
+import InputGroup from './views/inputgroup'
+import Usuarios from './views/CreateUser.vue'
 import Login from './views/Login'
 import ListadoUsuarios from './views/ListadoUsuarios'
 
@@ -46,6 +48,16 @@ const router = new createRouter({
             component : cardExamples
         },
         {
+            path : '/InputGroup',
+            name : 'InputGroup',
+            component : InputGroup
+        },
+        {
+            path : '/creacionusuarios',
+            name : 'Usuarios',
+            component : Usuarios
+        },
+        {
             path : '/Login',
             name : 'Login',
             component : Login
@@ -54,6 +66,7 @@ const router = new createRouter({
             path : '/ListadoUsuarios',
             name : 'ListadoUsuarios',
             component : ListadoUsuarios
+
         }
 
     ]
